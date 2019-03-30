@@ -13,7 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./animate.css">
+    <link rel="stylesheet" href="animate.css">
 
 
     <style>
@@ -22,7 +22,7 @@
         }
 
         .bg-gams {
-            background-color: #3CAEA3;
+            background-color: #0075c2;
         }
 
         .live_scroll {
@@ -45,8 +45,21 @@
             width: 400px;
         }
 
+        .btn {
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
         nav {
             margin-bottom: 0;
+        }
+
+        .test-done {
+            border: solid 5px #28a745;
+        }
+
+        .test-in-progress {
+            border: solid 5px #ffc107;
         }
 
         .bd-placeholder-img {
@@ -68,7 +81,7 @@
     <link href="starter-template.css" rel="stylesheet">
 </head>
 
-<body class="bg-dark">
+<body class="">
     <nav class="navbar navbar-expand-md navbar-dark bg-gams fixed-top">
         <a class="navbar-brand" href="#">수수료 검증 프로젝트</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
@@ -97,8 +110,8 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" type="text" placeholder="검색" aria-label="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">검색</button>
             </form>
         </div>
     </nav>
@@ -109,14 +122,14 @@
             <div class="row flex-row flex-nowrap">
 
 
-                <div class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3 test-done">
                     <h4 class="text-center">1. 재료준비</h4>
                     <button type="button" class="btn btn-block btn-success my-2 my-button">
                         <h6>재료가 모두 준비되었는지 체크합니다.</h6>
                     </button>
                 </div>
 
-                <div class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3 test-in-progress">
                     <h4 class="text-center">2. 율검증</h4>
                     <button type="button" class="btn btn-block btn-success my-2 my-button">
                         <h6>A율</h6>
