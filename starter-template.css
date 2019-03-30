@@ -1,4 +1,6 @@
-body {}
+body {
+    padding-top: 4rem;
+}
 
 .starter-template {
     padding: 3rem 1.5rem;

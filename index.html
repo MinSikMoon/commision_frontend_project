@@ -16,6 +16,14 @@
 
 
     <style>
+        .my-button {
+            height: 6rem;
+        }
+
+        .bg-gams {
+            background-color: #3CAEA3;
+        }
+
         .live_scroll {
             overflow-x: auto;
             overflow-y: hidden;
@@ -32,7 +40,7 @@
             padding: 15px;
         }
 
-        .card {
+        .jumbotron {
             width: 400px;
         }
 
@@ -59,9 +67,9 @@
     <link href="starter-template.css" rel="stylesheet">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-gams fixed-top">
+        <a class="navbar-brand" href="#">수수료 검증 프로젝트</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -95,90 +103,93 @@
         </div>
     </nav>
 
-    <main role="main" class="container-fluid overflow-auto live_scroll">
+    <main role="main" class="container-fluid">
 
-        <div class="row">
+        <div class="container-fluid">
+            <div class="row flex-row flex-nowrap">
+
+
+                <div class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3">
+                    <h4 class="text-center">1. 재료준비</h4>
+                    <button type="button" class="btn btn-block btn-success my-2 my-button">
+                        <h6>재료가 모두 준비되었는지 체크합니다.</h6>
+                    </button>
+                </div>
+
+                <div class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3">
+                    <h4 class="text-center">2. 율검증</h4>
+                    <button type="button" class="btn btn-block btn-success my-2 my-button">
+                        <h6>A율</h6>
+                    </button>
+                    <button type="button" class="btn btn-block btn-warning my-2 my-button">
+                        <h6>B율</h6>
+                    </button>
+                    <button type="button" class="btn btn-block btn-danger my-2 my-button">
+                        <h6>C율</h6>
+                    </button>
+                    <button type="button" class="btn btn-block btn-secondary my-2 my-button">
+                        <h6>D율</h6>
+                    </button>
+                </div>
+
+                <div class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3">
+                    <h4 class="text-center">3. 값검증</h4>
+                    <button type="button" class="btn btn-block btn-secondary my-2 my-button">
+                        <h6>A값</h6>
+                    </button>
+                    <button type="button" class="btn btn-block btn-secondary my-2 my-button">
+                        <h6>A값</h6>
+                    </button>
+                    <button type="button" class="btn btn-block btn-secondary my-2 my-button">
+                        <h6>A값</h6>
+                    </button>
+                    <button type="button" class="btn btn-block btn-secondary my-2 my-button">
+                        <h6>A값</h6>
+                    </button>
+                    <button type="button" class="btn btn-block btn-secondary my-2 my-button">
+                        <h6>A값</h6>
+                    </button>
+                    <button type="button" class="btn btn-block btn-secondary my-2 my-button">
+                        <h6>A값</h6>
+                    </button>
+                </div>
 
 
 
-            <div class="jumbotron card live_scroll_box mx-3 my-2">
-                <h4 class="text-center">1. 재료준비</h4>
-                <div class="card w-100 my-1">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
-                        <p class="card-text overflow-hidden">재료가 완전히 준비되었는지 체크합니다.</p>
+
+                <div class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3">
+                    <h4 class="text-center">4. SOMETHING 검증</h4>
+                    <div class="card w-100 my-1">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
+                            <p class="card-text overflow-hidden">재료가 완전히 준비되었는지 체크합니다.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card w-100 my-1">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
-                        <p class="card-text overflow-hidden">재료가 완전히 준비되었는지 체크합니다.</p>
+                <div class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3">
+                    <h4 class="text-center">1. 재료준비</h4>
+                    <div class="card w-100 my-1">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
+                            <p class="card-text overflow-hidden">재료가 완전히 준비되었는지 체크합니다.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card w-100 my-1">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
-                        <p class="card-text overflow-hidden">재료가 완전히 준비되었는지 체크합니다.</p>
+                <div class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3">
+                    <h4 class="text-center">1. 재료준비</h4>
+                    <div class="card w-100 my-1">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
+                            <p class="card-text overflow-hidden">재료가 완전히 준비되었는지 체크합니다.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card w-100 my-1">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
-                        <p class="card-text overflow-hidden">재료가 완전히 준비되었는지 체크합니다.</p>
-                    </div>
-                </div>
-                <div class="card w-100 my-1">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
-                        <p class="card-text overflow-hidden">재료가 완전히 준비되었는지 체크합니다.</p>
-                    </div>
-                </div>
+
+
+
+
 
             </div>
-
-
-            <div class="jumbotron card live_scroll_box mx-3 my-2">
-                <h4 class="text-center">1. 재료준비</h4>
-                <div class="card w-100 my-1">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
-                        <p class="card-text overflow-hidden">재료가 완전히 준비되었는지 체크합니다.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="jumbotron card live_scroll_box mx-3 my-2">
-                <h4 class="text-center">1. 재료준비</h4>
-                <div class="card w-100 my-1">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
-                        <p class="card-text overflow-hidden">재료가 완전히 준비되었는지 체크합니다.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="jumbotron card live_scroll_box mx-3 my-2">
-                <h4 class="text-center">1. 재료준비</h4>
-                <div class="card w-100 my-1">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
-                        <p class="card-text overflow-hidden">재료가 완전히 준비되었는지 체크합니다.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="jumbotron card live_scroll_box mx-3 my-2">
-                <h4 class="text-center">1. 재료준비</h4>
-                <div class="card w-100 my-1">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
-                        <p class="card-text overflow-hidden">재료가 완전히 준비되었는지 체크합니다.</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
         </div>
 
     </main><!-- /.container -->
