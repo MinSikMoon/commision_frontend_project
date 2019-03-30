@@ -16,8 +16,28 @@
 
 
     <style>
+        .live_scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+        }
+
+        .live_scroll .row {
+            /**display: block;**/
+        }
+
+        .live_scroll .live_scroll_box {
+            display: inline-block;
+            float: none;
+            padding: 15px;
+        }
+
         .card {
-            width: 300px;
+            width: 400px;
+        }
+
+        nav {
+            margin-bottom: 0;
         }
 
         .bd-placeholder-img {
@@ -40,7 +60,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,81 +95,60 @@
         </div>
     </nav>
 
-    <main role="main" class="container-fluid overflow-auto">
+    <main role="main" class="container-fluid overflow-auto live_scroll">
 
         <div class="row">
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
+
+
+
+            <div class="jumbotron card live_scroll_box">
+                <h4 class="text-center">1. 재료준비</h4>
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
+                        <p class="card-text overflow-hidden">내용</p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
+                        <p class="card-text overflow-hidden">내용</p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
+                        <p class="card-text overflow-hidden">내용</p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
+                        <p class="card-text overflow-hidden">내용</p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                </div>
             </div>
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
+            <div class="jumbotron card live_scroll_box">
+                <h4 class="text-center">1. 재료준비</h4>
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
+                        <p class="card-text overflow-hidden">내용</p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+
             </div>
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
-            </div>
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
-            </div>
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
-            </div>
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
-            </div>
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
-            </div>
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
-            </div>
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
-            </div>
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
-            </div>
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
-            </div>
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
-            </div>
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
-            </div>
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
-            </div>
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
-            </div>
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
-            </div>
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
-            </div>
-            <div class="jumbotron card">
-                <h6 class="text-center">1. 재료준비</h6>
-                <hr class="my-4">
-            </div>
+
+
+
+
+
         </div>
 
     </main><!-- /.container -->
@@ -157,9 +156,10 @@
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
     <script>
-        window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
+        window.jQuery || document.write(
+            '<script src="https://getbootstrap.com/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
     </script>
-    <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous">
     </script>
 </body>
