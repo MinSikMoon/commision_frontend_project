@@ -21,8 +21,8 @@
     <!-- jquery -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <style>
-      .my-button {
-        height: 6rem;
+      .card-size {
+        height: 4rem;
       }
 
       .bg-gams {
@@ -49,9 +49,13 @@
         width: 300px;
       }
 
-      .btn {
+      .btn-warning {
         animation-duration: 2s;
         animation-iteration-count: infinite;
+      }
+      .btn-danger {
+        animation-duration: 1s;
+        animation-iteration-count: 2;
       }
 
       nav {
@@ -64,6 +68,13 @@
 
       .test-in-progress {
         border: solid 5px #ffc107;
+      }
+
+      .color-bg-gray {
+        background-color: #6c757d;
+      }
+      .color-text-white {
+        color: white;
       }
 
       .bd-placeholder-img {
@@ -158,17 +169,20 @@
             <h4 class="text-center">1. 재료준비</h4>
             <button
               type="button"
-              class="btn btn-block btn-success my-2 my-button"
+              class="btn btn-block btn-success my-2 card-size"
             >
               <h6>재료가 모두 준비되었는가?</h6>
             </button>
 
-            <div class="card w-100 my-1">
+            <div class="card w-100 my-1 color-bg-gray color-text-white">
               <div class="card-body">
-                <h5 class="card-title text-center">
+                <h6 class="card-title text-center">
                   재료 준비가 완료 되었는가?
-                </h5>
-                <button type="button" class="btn btn-primary">
+                </h6>
+                <button
+                  type="button"
+                  class="btn btn-primary float-right px-1 py-1"
+                >
                   <img src="icons/play.svg" />
                 </button>
               </div>
@@ -181,25 +195,25 @@
             <h4 class="text-center">2. 율검증</h4>
             <button
               type="button"
-              class="btn btn-block btn-success my-2 my-button"
+              class="btn btn-block btn-success my-2 card-size"
             >
-              <h6>A율</h6>
+              <h6>특약별 A율이 일치하는가?</h6>
             </button>
             <button
               type="button"
-              class="btn btn-block btn-warning my-2 my-button animated flash"
+              class="btn btn-block btn-warning my-2 card-size animated flash"
             >
-              <h6>B율</h6>
+              <h6>특약별 B율이 일치하는가?</h6>
             </button>
             <button
               type="button"
-              class="btn btn-block btn-danger my-2 my-button"
+              class="btn btn-block btn-danger my-2 card-size animated shake"
             >
-              <h6>C율</h6>
+              <h6>특약별 C율이 일치하는가?</h6>
             </button>
             <button
               type="button"
-              class="btn btn-block btn-secondary my-2 my-button"
+              class="btn btn-block btn-secondary my-2 card-size"
             >
               <h6>D율</h6>
             </button>
@@ -211,37 +225,37 @@
             <h4 class="text-center">3. 값검증</h4>
             <button
               type="button"
-              class="btn btn-block btn-secondary my-2 my-button"
+              class="btn btn-block btn-secondary my-2 card-size"
             >
               <h6>A값</h6>
             </button>
             <button
               type="button"
-              class="btn btn-block btn-secondary my-2 my-button"
+              class="btn btn-block btn-secondary my-2 card-size"
             >
               <h6>A값</h6>
             </button>
             <button
               type="button"
-              class="btn btn-block btn-secondary my-2 my-button"
+              class="btn btn-block btn-secondary my-2 card-size"
             >
               <h6>A값</h6>
             </button>
             <button
               type="button"
-              class="btn btn-block btn-secondary my-2 my-button"
+              class="btn btn-block btn-secondary my-2 card-size"
             >
               <h6>A값</h6>
             </button>
             <button
               type="button"
-              class="btn btn-block btn-secondary my-2 my-button"
+              class="btn btn-block btn-secondary my-2 card-size"
             >
               <h6>A값</h6>
             </button>
             <button
               type="button"
-              class="btn btn-block btn-secondary my-2 my-button"
+              class="btn btn-block btn-secondary my-2 card-size"
             >
               <h6>A값</h6>
             </button>
