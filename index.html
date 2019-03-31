@@ -1,221 +1,306 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Starter Template · Bootstrap</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Jekyll v3.8.5" />
+    <title>수수료 검증 프로젝트</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="animate.css">
-
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="animate.css" />
 
     <style>
-        .my-button {
-            height: 6rem;
-        }
+      .my-button {
+        height: 6rem;
+      }
 
-        .bg-gams {
-            background-color: #0075c2;
-        }
+      .bg-gams {
+        background-color: #0075c2;
+      }
 
-        .live_scroll {
-            overflow-x: auto;
-            overflow-y: hidden;
-            white-space: nowrap;
-        }
+      .live_scroll {
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+      }
 
-        .live_scroll .row {
-            display: block;
-        }
+      .live_scroll .row {
+        display: block;
+      }
 
-        .live_scroll .live_scroll_box {
-            display: inline-block;
-            float: none;
-            padding: 15px;
-        }
+      .live_scroll .live_scroll_box {
+        display: inline-block;
+        float: none;
+        padding: 15px;
+      }
 
-        .jumbotron {
-            width: 400px;
-        }
+      .jumbotron {
+        width: 400px;
+      }
 
-        .btn {
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-        }
+      .btn {
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
 
-        nav {
-            margin-bottom: 0;
-        }
+      nav {
+        margin-bottom: 0;
+      }
 
-        .test-done {
-            border: solid 5px #28a745;
-        }
+      .test-done {
+        border: solid 5px #28a745;
+      }
 
-        .test-in-progress {
-            border: solid 5px #ffc107;
-        }
+      .test-in-progress {
+        border: solid 5px #ffc107;
+      }
 
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
         }
+      }
     </style>
     <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
-</head>
+    <link href="starter-template.css" rel="stylesheet" />
+  </head>
 
-<body class="">
+  <body class="">
     <nav class="navbar navbar-expand-md navbar-dark bg-gams fixed-top">
-        <a class="navbar-brand" href="#">수수료 검증 프로젝트</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <a class="navbar-brand" href="#">수수료 검증 프로젝트</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">탭1 <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">링크</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">메뉴</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="#">메뉴얼</a>
-                        <a class="dropdown-item" href="#">문제집</a>
-                    </div>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="검색" aria-label="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">검색</button>
-            </form>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >탭1 <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">링크</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdown01"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >메뉴</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">메뉴얼</a>
+              <a class="dropdown-item" href="#">문제집</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="text"
+            placeholder="검색"
+            aria-label="Search"
+          />
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+            검색
+          </button>
+        </form>
+      </div>
     </nav>
 
     <main role="main" class="container-fluid">
+      <div class="container-fluid">
+        <div class="row  flex-row flex-nowrap">
+          <div
+            class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3 test-done"
+          >
+            <h4 class="text-center">1. 재료준비</h4>
+            <button
+              type="button"
+              class="btn btn-block btn-success my-2 my-button"
+            >
+              <h6>재료가 모두 준비되었는지 체크합니다.</h6>
+            </button>
+          </div>
 
-        <div class="container-fluid">
-            <div class="row flex-row flex-nowrap">
+          <div
+            class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3 test-in-progress"
+          >
+            <h4 class="text-center">2. 율검증</h4>
+            <button
+              type="button"
+              class="btn btn-block btn-success my-2 my-button"
+            >
+              <h6>A율</h6>
+            </button>
+            <button
+              type="button"
+              class="btn btn-block btn-warning my-2 my-button animated flash"
+            >
+              <h6>B율</h6>
+            </button>
+            <button
+              type="button"
+              class="btn btn-block btn-danger my-2 my-button"
+            >
+              <h6>C율</h6>
+            </button>
+            <button
+              type="button"
+              class="btn btn-block btn-secondary my-2 my-button"
+            >
+              <h6>D율</h6>
+            </button>
+          </div>
 
+          <div
+            class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3"
+          >
+            <h4 class="text-center">3. 값검증</h4>
+            <button
+              type="button"
+              class="btn btn-block btn-secondary my-2 my-button"
+            >
+              <h6>A값</h6>
+            </button>
+            <button
+              type="button"
+              class="btn btn-block btn-secondary my-2 my-button"
+            >
+              <h6>A값</h6>
+            </button>
+            <button
+              type="button"
+              class="btn btn-block btn-secondary my-2 my-button"
+            >
+              <h6>A값</h6>
+            </button>
+            <button
+              type="button"
+              class="btn btn-block btn-secondary my-2 my-button"
+            >
+              <h6>A값</h6>
+            </button>
+            <button
+              type="button"
+              class="btn btn-block btn-secondary my-2 my-button"
+            >
+              <h6>A값</h6>
+            </button>
+            <button
+              type="button"
+              class="btn btn-block btn-secondary my-2 my-button"
+            >
+              <h6>A값</h6>
+            </button>
+          </div>
 
-                <div class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3 test-done">
-                    <h4 class="text-center">1. 재료준비</h4>
-                    <button type="button" class="btn btn-block btn-success my-2 my-button">
-                        <h6>재료가 모두 준비되었는지 체크합니다.</h6>
-                    </button>
-                </div>
-
-                <div class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3 test-in-progress">
-                    <h4 class="text-center">2. 율검증</h4>
-                    <button type="button" class="btn btn-block btn-success my-2 my-button">
-                        <h6>A율</h6>
-                    </button>
-                    <button type="button" class="btn btn-block btn-warning my-2 my-button animated flash">
-                        <h6>B율</h6>
-                    </button>
-                    <button type="button" class="btn btn-block btn-danger my-2 my-button">
-                        <h6>C율</h6>
-                    </button>
-                    <button type="button" class="btn btn-block btn-secondary my-2 my-button">
-                        <h6>D율</h6>
-                    </button>
-                </div>
-
-                <div class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3">
-                    <h4 class="text-center">3. 값검증</h4>
-                    <button type="button" class="btn btn-block btn-secondary my-2 my-button">
-                        <h6>A값</h6>
-                    </button>
-                    <button type="button" class="btn btn-block btn-secondary my-2 my-button">
-                        <h6>A값</h6>
-                    </button>
-                    <button type="button" class="btn btn-block btn-secondary my-2 my-button">
-                        <h6>A값</h6>
-                    </button>
-                    <button type="button" class="btn btn-block btn-secondary my-2 my-button">
-                        <h6>A값</h6>
-                    </button>
-                    <button type="button" class="btn btn-block btn-secondary my-2 my-button">
-                        <h6>A값</h6>
-                    </button>
-                    <button type="button" class="btn btn-block btn-secondary my-2 my-button">
-                        <h6>A값</h6>
-                    </button>
-                </div>
-
-
-
-
-                <div class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3">
-                    <h4 class="text-center">4. SOMETHING 검증</h4>
-                    <div class="card w-100 my-1">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
-                            <p class="card-text overflow-hidden">재료가 완전히 준비되었는지 체크합니다.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3">
-                    <h4 class="text-center">1. 재료준비</h4>
-                    <div class="card w-100 my-1">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
-                            <p class="card-text overflow-hidden">재료가 완전히 준비되었는지 체크합니다.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3">
-                    <h4 class="text-center">1. 재료준비</h4>
-                    <div class="card w-100 my-1">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">재료 준비가 완료 되었는가?</h5>
-                            <p class="card-text overflow-hidden">재료가 완전히 준비되었는지 체크합니다.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
+          <div
+            class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3"
+          >
+            <h4 class="text-center">4. SOMETHING 검증</h4>
+            <div class="card w-100 my-1">
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  재료 준비가 완료 되었는가?
+                </h5>
+                <p class="card-text overflow-hidden">
+                  재료가 완전히 준비되었는지 체크합니다.
+                </p>
+              </div>
             </div>
+          </div>
+          <div
+            class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3"
+          >
+            <h4 class="text-center">1. 재료준비</h4>
+            <div class="card w-100 my-1">
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  재료 준비가 완료 되었는가?
+                </h5>
+                <p class="card-text overflow-hidden">
+                  재료가 완전히 준비되었는지 체크합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="jumbotron py-3 px-3 mx-3 my-2 col-12 col-sm-6 col-md-4 col-lg-3"
+          >
+            <h4 class="text-center">1. 재료준비</h4>
+            <div class="card w-100 my-1">
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  재료 준비가 완료 되었는가?
+                </h5>
+                <p class="card-text overflow-hidden">
+                  재료가 완전히 준비되었는지 체크합니다.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-
-    </main><!-- /.container -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+      </div>
+    </main>
+    <!-- /.container -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
     <script>
-        window.jQuery || document.write(
-            '<script src="https://getbootstrap.com/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
+      window.jQuery ||
+        document.write(
+          '<script src="https://getbootstrap.com/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>'
+        );
     </script>
-    <script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous">
-    </script>
-</body>
-
+    <script
+      src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
