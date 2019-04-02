@@ -9,5 +9,7 @@
 ## sketch
 ![image](https://user-images.githubusercontent.com/21155325/55277382-dea7da00-5342-11e9-812f-7fb94e2a5115.png)
 
+## references
+![image](https://wac-cdn.atlassian.com/dam/jcr:129ceb2b-3fdd-4edc-a29f-19652223c525/plan-track.png)
 ## current 진행상황
 ![image](https://user-images.githubusercontent.com/21155325/55279368-cbedcf00-535b-11e9-98df-67b709ae0eae.png)
